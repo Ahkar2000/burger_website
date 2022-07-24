@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<div class="loader-container">
+    <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="My Second Project"/>
+<!--    <meta name="keywords" content="mms, mms it, it service, best it service, php class, web developer, web class"/>-->
+    <meta name="author" content="Ahkar Min Htut"/>
+
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="Ahkar's Website"/>
+    <meta property="og:image" content="./img/Screenshot 2022-06-14 192116.jpg"/>
+    <meta property="og:site_name" content="Food Website"/>
+    <meta property="og:description" content="Second Website"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon_io/site.webmanifest">
+
+    <title>Burger House</title>
+    <link rel="stylesheet" href="./vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./vendor/aos/aos.css" class="">
+    <link rel="stylesheet" href="./vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .loader-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 2000;
+      }
+                .sk-cube-grid {
+            width: 40px;
+            height: 40px;
+            margin: 100px auto;
+            }
+
+            .sk-cube-grid .sk-cube {
+            width: 33%;
+            height: 33%;
+            background-color: #ffc045;
+            float: left;
+            -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+                    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+            }
+            .sk-cube-grid .sk-cube1 {
+            -webkit-animation-delay: 0.2s;
+                    animation-delay: 0.2s; }
+            .sk-cube-grid .sk-cube2 {
+            -webkit-animation-delay: 0.3s;
+                    animation-delay: 0.3s; }
+            .sk-cube-grid .sk-cube3 {
+            -webkit-animation-delay: 0.4s;
+                    animation-delay: 0.4s; }
+            .sk-cube-grid .sk-cube4 {
+            -webkit-animation-delay: 0.1s;
+                    animation-delay: 0.1s; }
+            .sk-cube-grid .sk-cube5 {
+            -webkit-animation-delay: 0.2s;
+                    animation-delay: 0.2s; }
+            .sk-cube-grid .sk-cube6 {
+            -webkit-animation-delay: 0.3s;
+                    animation-delay: 0.3s; }
+            .sk-cube-grid .sk-cube7 {
+            -webkit-animation-delay: 0s;
+                    animation-delay: 0s; }
+            .sk-cube-grid .sk-cube8 {
+            -webkit-animation-delay: 0.1s;
+                    animation-delay: 0.1s; }
+            .sk-cube-grid .sk-cube9 {
+            -webkit-animation-delay: 0.2s;
+                    animation-delay: 0.2s; }
+
+            @-webkit-keyframes sk-cubeGridScaleDelay {
+            0%, 70%, 100% {
+                -webkit-transform: scale3D(1, 1, 1);
+                        transform: scale3D(1, 1, 1);
+            } 35% {
+                -webkit-transform: scale3D(0, 0, 1);
+                        transform: scale3D(0, 0, 1); 
+            }
+            }
+
+            @keyframes sk-cubeGridScaleDelay {
+            0%, 70%, 100% {
+                -webkit-transform: scale3D(1, 1, 1);
+                        transform: scale3D(1, 1, 1);
+            } 35% {
+                -webkit-transform: scale3D(0, 0, 1);
+                        transform: scale3D(0, 0, 1);
+            } 
+            }
+    </style>
+</head>
+<body>
+    <div class="up-top" style="display: none;">
+        <i class="fas fa-angle-up animate__animated animate__flash" style="animation-iteration-count: infinite;"></i>
+    </div>
+    <header class="container-fluid first-page animate__animated animate__slideInDown ani-delay-1">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mx-auto px-0">
+                        <div class="mt-0 pt-md-1 px-md-5 mx-auto" style="max-width: 1600px;">
+                            <div class="d-block justify-content-between align-items-center d-md-flex">
+                                <nav class="navbar navbar-expand-lg container-fluid d-flex justify-content-between">
+                                    <div class="container-fluid">
+                                      <div class="">
+                                        <a class="navbar-brand" href="#">
+                                            <img src="./img/logo.png" alt="" class="top-logo">
+                                        </a>
+                                      </div>
+                                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class=" fas fa-bars" id="menu-icon"></i>
+                                      </button>
+                                      <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                                        <div class=" d-flex flex-column align-items-center align-items-lg-end side-nav">
+                                            <ul class="mb-0 mobile-menu">
+                                                <div class="mb-3 d-flex align-items-center justify-content-center">
+                                                    <img src="./img/output-onlinepngtools.png" alt="" class="bike">
+                                                    <span class="ms-2 text-black">Express Delivery +1254 567 890</span>
+                                                </div>
+                                            </ul>
+                                            <ul class="navbar-nav me-0 mb-2 mb-lg-0 nav-mobile">
+                                              <li class="nav-item side-nav-mobile">
+                                                <a class="nav-link" aria-current="page" href="#home">HOME</a>
+                                              </li>
+                                              <li class="nav-item side-nav-mobile">
+                                                <a class="nav-link" href="#about">ABOUT US</a>
+                                              </li>
+                                              <li class="nav-item side-nav-mobile">
+                                                <a class="nav-link" href="#menu">MENU</a>
+                                              </li>
+                                              <li class="nav-item side-nav-mobile">
+                                                <a href="#blog" class="nav-link">BLOG</a>
+                                              </li>
+                                              <li class="nav-item side-nav-mobile">
+                                                <a class="nav-link" href="#contact">CONTACT US</a>
+                                              </li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </nav>
+                                
+                            </div>                          
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid first-page-content position-relative" id="home">
+        <div class="row">
+            <div class="container">
+                <div class="row min-vh-100 d-block d-lg-flex mt-5 mt-lg-0 justify-content-between align-items-center">
+                    <div class="col-12 mx-auto px-md-5 col-xxl-10 first-page-one pt-5 pt-md-0">
+                        <div class="d-block d-md-flex justify-content-between align-items-center mt-md-5">
+                            <div class="mobile-f animate__animated animate__fadeIn ani-delay-1">
+                                <div class="mb-3 border-dot">
+                                    <p class="mb-0 dot-text">IT IS A GREAT TIME FOR THE GREAT TASTE OF BURGERS</p>
+                                </div>
+                                <h1 class="bigsize">BURGER</h1>
+                                <h3 class="bigsize-two">WEEK</h3>
+                            </div>
+                            <div class=" position-relative one-hover animate__animated animate__fadeIn ani-delay-1">
+                                <img src="./img/French Fries.png" class="chip" alt="">
+                                <img src="./img/Burger Image.png" class="oneburger position-relative" alt="">
+                                <img src="./img/Drinks.png" class="cola" alt="">
+                                <img src="./img/Glow.png" alt="" class=" position-absolute glow">
+                                <img src="./img/burger-shadow.png" alt="" class="position-absolute sh-burger">
+                                <img src="./img/drink-shadow.png" alt="" class="position-absolute sh-drink">
+                                <div class="red-circle d-flex align-items-center justify-content-center">
+                                    <div class="red-dot-circle d-flex align-items-center justify-content-center flex-column">
+                                        <div class="d-flex align-items-end">
+                                            <h1 class="mb-0 five">$5</h1>
+                                            <span class="four-nine">.49</span>
+                                        </div>
+                                        <span class="only">O N L Y</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="about">
+        <div class="row">
+            <div class="container">
+                <div class="col-12 min-vh-100 d-flex align-items-center">
+                    <div class="row d-flex align-items-start mt-xl-5 mx-xxl-auto">
+                        <div class="col-12 col-lg-6 col-xxl-6 pe-xl-0">
+                            <div class="mt-5 ps-xxl-5 " data-aos="fade-right">
+                                <div class=" position-absolute text-white ms-3 mt-2 ms-md-5 mt-md-3 fw-bolder">
+                                    <span class="fz-10">TRY IT TODAY</span>
+                                    <h4 class="fz-15">MOST POPULAR BURGER</h4>
+                                </div>
+                                <img src="./img/p2-burger-one.png" alt="" class="w-100 ms-xl-3 p2-burger-one " >
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xxl-6 ps-xl-0">
+                            <div class=" ">
+                                <div class="mb-xxl-5" data-aos="fade-left">
+                                    <div class="position-absolute text-white mt-md-5 ms-3 mt-4 ms-md-4 mb-xxl-0 pt-md-3 ps-md-1 fw-bolder">
+                                        <span class="fz-10">TRY IT TODAY</span>
+                                        <h4 class="fz-15">
+                                            MORE FUN 
+                                            <br>
+                                            MORE TASTE
+                                        </h4>
+                                    </div>
+                                    <img src="./img/p2-burger-two.png" alt="" class="p2-burger-two w-100" >
+                                </div>
+                                <div class="position-relative pb-xxl-5" data-aos="fade-left">
+                                    <img src="./img/p2-burger-three.png" alt="" class="p2-burger-three w-100">
+                                    <div class="position-absolute text-white fw-bolder top-0 ms-3 ms-md-4">
+                                    <span class="fz-10">TRY IT TODAY</span>
+                                    <h4 class="fz-15">
+                                        FRESH & CHILI
+                                    </h4>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" container-fluid" id="menu">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 min-vh-100 my-4">
+                        <div class="col-12 mb-5">
+                            <div class=" text-center mb-5" data-aos="zoom-in">
+                                <span class="border text-center p-3" style="background-color: #ffc045;">ALWAYS TASTE BURGER</span>
+                            </div>
+                            <div class="text-center col-10 m-auto" data-aos="zoom-in">
+                                <h1 class=" fw-bolder">
+                                    CHOOSE & ENJOY
+                                </h1>
+                                <p class=" text-black-50">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi doloribus, ex temporibus veniam reprehenderit et impedit natus culpa necessitatibus. Minima sint recusandae saepe cum quam autem, officia repellat quos totam?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 d-block d-lg-flex m-auto">
+                            <div class="col-12 col-lg-4  d-flex flex-column align-items-center mb-5 mb-lg-0" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="linear">
+                                <img src="./img/p3-burger-one-min.png" alt="" class="w-75 img-hover">
+                                <div class="d-flex flex-column align-items-center mt-5">
+                                    <h4 class="text-center">
+                                        CHICKEN BURGER
+                                    </h4>
+                                    <P class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </P>
+                                    <button class="btn btn-danger">ORDER NOW</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 d-flex flex-column align-items-center mb-5 mb-lg-0" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="linear">
+                                <img src="./img/p3-burger-three-min.png" alt="" class="w-75 img-hover">
+                                <div class="d-flex flex-column align-items-center mt-4">
+                                    <h4 class="text-center">
+                                        CHEESE BURGER
+                                    </h4>
+                                    <P class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </P>
+                                    <button class="btn btn-danger">ORDER NOW</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 d-flex flex-column align-items-center" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="linear">
+                                <img src="./img/p3-burger-two-min.png" alt="" class="w-75 img-hover">
+                                <div class="d-flex flex-column align-items-center mt-5">
+                                    <h4 class="text-center">
+                                        BEEF BURGER
+                                    </h4>
+                                    <P class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </P>
+                                    <button class="btn btn-danger">ORDER NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" container-fluid" id="blog">
+        <div class="row">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 min-vh-100 mt-5 d-flex align-items-center">
+                        <div class="col-11 m-auto">
+                            <div class="card overflow-hidden p-3 border-0 shadow" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-easing="linear">
+                                <div class="row g-0">
+                                  <div class="col-lg-6">
+                                    <div class="card-body">
+                                      <h5 class="mb-0">DISCOVER</h5>
+                                      <h2 class="card-title fw-bolder mb-3">UPCOMING EVENTS</h2>
+                                      <p class="card-text mb-5">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ea, qui dolorem molestias numquam tenetur repellendus. Nam praesentium in a at porro quia voluptas officiis mollitia similique tenetur facere, soluta quidem debitis ea non dolorum repellendus deserunt qui incidunt, sit dolore aspernatur error. Ratione soluta nobis voluptatibus, in earum eius?
+                                      </p>
+                                      <i class="fa-solid fa-star text-warning"></i>
+                                      <i class="fa-regular fa-star text-warning"></i>
+                                      <i class="fa-regular fa-star text-warning"></i>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <img src="./img/p4.png" class="img-fluid rounded-start w-100 border rounded" alt="...">
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-bot" id="contact">
+        <div class="row">
+            <div class="container">
+                <div class="row ">
+                    <div>
+                       <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="">
+                                    <div class="d-flex align-items-start">
+                                        <img src="./img/p4-burgertop-min.png" class="w-50 " alt="" data-aos="fade-right">
+                                    </div>
+                                    <div class="d-flex justify-content-end pb-5 pe-5">
+                                        <img src="./img/Bottle.png" class="w-25 " alt="" data-aos="fade-right">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="col-12">
+                                    <div class="text-center mt-5 text-white" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                        <h4>
+                                            RESERVATION
+                                        </h4>
+                                        <h1 class="fw-bolder">
+                                            BOOK YOUR TABLE
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 mt-5 position-relative">
+                                            <div class="d-flex flex-column align-items-end" data-aos="fade-right">
+                                                <input type="text" class="form-control w-100 mb-3" name="" id="" placeholder="NAME">
+                                                <input type="text" class="form-control w-100 mb-3" name="" id="" placeholder="DATE">
+                                                <input type="text" class="form-control w-100 mb-3" name="" id="" placeholder="PEOPLE">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-5">
+                                            <div class="d-flex flex-column align-items-start" data-aos="fade-left">
+                                                <input type="text" class="form-control w-100 mb-3" name="" id="" placeholder="EMAIL">
+                                                <input type="text" class="form-control w-100 mb-3" name="" id="" placeholder="TIME">
+                                                <button class="btn btn-danger w-100">FIND A TABLE</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="ms-5 mt-5 pt-5">
+                                    <img src="./img/plate-min.png" class="w-100 plate" alt="" data-aos="fade-left">
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="container position-relative">
+                <div class="col-12 mt-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="ms-lg-5 text-white">
+                                <div class="mb-5" data-aos="fade-right">
+                                    <img src="./img/logo.png" class="w-75 mb-3" alt="">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione consectetur, placeat facere quod ipsam earum aliquid suscipit esse aspernatur ipsum eius ea iure nulla vel, corrupti reprehenderit qui voluptatem. Itaque.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center justify-content-center text-white justify-content-md-start justify-content-lg-center">
+                            <div class="mb-lg-5 d-flex align-items-start d-lg-block flex-column">
+                                <div class="d-flex align-items-center" data-aos="fade-left" data-aos-duration="500">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p class="ms-2 mb-0">
+                                        (10)QUATER SATKYAR ROAD,MEIKTILA
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="d-flex align-items-center"  data-aos="fade-left" data-aos-duration="1000">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <p class="ms-2 mb-0">
+                                        INFO@COMAPNYNAME.COM
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-lg-3">
+                <div class="text-white d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-end ms-xxl-3" data-aos="fade-down">
+                    <div class="mt-lg-5 pt-lg-5 mt-5">
+                        <i class="fa-regular fa-copyright"></i>
+                        <span>BURGER HOUSE 2022 ALL RIGHTS RESERVED</span>
+                    </div>
+                    <div class="mt-lg-5 text-white social my-3 my-lg-0 me-xxl-3">
+                        <i class="fa-brands fa-facebook-square"></i>
+                        <i class="fa-brands fa-twitter-square"></i>
+                        <i class="fa-brands fa-instagram-square"></i>
+                        <i class="fa-brands fa-whatsapp-square"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./vendor/jquery.js"></script>
+    <script src="./vendor/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="./vendor/aos/aos.js"></script>
+    <script src="./vendor/way_point/jquery.waypoints.min.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+</html>

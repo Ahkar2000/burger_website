@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
+*{
+    font-family: 'Merriweather', serif;
+}
+body,html{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --bg : #ffc045; 
+    --red-circle : #bf2222;
+}
+.auto-up{
+    cursor: pointer;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg);
+    border-radius: 3px;
+    z-index: 9;
+}
+.first-page{
+    position: absolute;
+    z-index: 1;
+}
+.first-page-content{
+    background-color: var(--bg);
+}
+.top-logo{
+    width: 250px;
+}
+.bike{
+    width: 40px;
+}
+.bigsize{
+    font-size: 6em;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.bigsize-two{
+    font-size: 3em;
+    font-weight: bolder;
+    margin: 0;
+}
+.border-dot{
+    border: 2px solid black;
+    border-style: dashed;
+    padding: 10px;
+    border-radius: 5px;
+}
+.cola{
+    width: 150px;
+    margin-left: -100px;
+}
+.chip{
+    width: 190px;
+    margin-left: -400px;
+    margin-right: -120px;
+    margin-bottom: 120px;
+    transform: rotate(-30deg);
+}
+.oneburger{
+    width: 400px;
+    z-index: 10;
+    position: relative;
+    margin-top: 80px;
+}
+.img-blur{
+    transition: 0.4s;
+}
+.img-blur:hover{
+    backdrop-filter: blur(5px);
+}
+.one-hover{
+    transition: 0.4s;
+}
+.one-hover:hover{
+    transform: translateY(-5px);
+}
+.img-hover{
+    transition: 0.4s;
+}
+.img-hover:hover{
+    transform: rotate(-6deg);
+}
+.red-circle{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    top: 311px;
+    background-color: var(--red-circle);
+    right: 383px;
+    z-index: 10;
+}
+.red-dot-circle{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border-style: dotted;
+    color: #fff;
+}
+.glow{
+    width: 540px;
+    z-index: 2;
+    top: -150px;
+    right: -10px;
+}
+.sh-burger{
+    width: 450px;
+    right: 21px; 
+    bottom: -35px;
+}
+.sh-drink{
+    width: 210px; 
+    right: -26px; 
+    bottom: -17px;
+}
+.p2-burger-two{
+    margin-top: -25px;
+}
+.p2-burger-three{
+    margin-top: -117px;
+    width: 98% !important;
+    margin-left: 7px;
+}
+.plate{
+    margin-left: 40%;
+    transform: rotate(90deg);
+}
+.bg-bot{
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url("../img/Layer.jpg");
+    background-position:  bottom;
+    background-attachment: fixed;
+}
+.ani-delay-1{
+    animation-delay: 1s;
+}
+.scroll{
+    background-color: var(--bg);
+    position: fixed;
+    top: 0;
+}
+/* .first-page .nav-link.scroll{
+    border-bottom: 2px solid #1A129F !important;
+    font-weight: bold;
+} */
+.first-page .nav-link.current-section{
+    border-bottom: 2px solid #000;
+    font-weight: bolder;
+}
+@media screen and (min-width: 1900px) {
+    .p2-burger-one{
+        height: 450px !important;
+    }
+    .p2-burger-two {
+        margin-top: -30px;
+    }
+    .p2-burger-three {
+        margin-top: -182px;
+        width: 98% !important;
+        margin-left: 7px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .first-page .nav-link.current-section{
+        border-bottom: 0;
+        font-weight: bolder;
+    }
+    .scroll{
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .one-hover{
+        top: 400px;
+        right: 50px;
+    }
+    .mobile-menu{
+        padding-top: 20px;
+        padding-left: 0;
+    }
+    .side-nav{
+        background-color: #ffffff;
+        backdrop-filter: blur(5px);
+    }
+    .side-nav-mobile{
+        padding: 0 10px;
+        margin-bottom: 10px;
+        border-radius: 1.75rem;
+        text-align: center;
+        background-color: var(--bg);
+        box-shadow: 0 0 5px #00000020;
+    }
+    .first-page{
+        background-color: #ffffff;
+        box-shadow: 0 0 5px #00000020;
+    }
+    .nav-mobile{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .auto-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 50px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        background-color: var(--bg);
+        border-radius: 3px;
+    }
+    .one-hover{
+        top: 0;
+        right: 0;
+    }
+    .top-menu{
+        display: flex !important;
+        align-content: space-between;
+    }
+    .first-page-one{
+        margin-top: 150px;
+    }
+    .mobile-fz{
+        font-size: 1rem;
+    }
+    .bigsize{
+        font-size: 4em !important;
+    }
+    .bigsize-two{
+        font-size: 1.5em !important;
+    }
+    .dot-text{
+        font-size: 0.7rem !important;
+    }
+    .cola{
+        width: 85px;
+        margin-left: -70px;
+        margin-top: 15px;
+    }
+    .chip{
+        width: 95px;
+        margin-left: 20px;
+        margin-top: 48px;
+        transform: rotate(-30deg);
+        position: absolute;
+    }
+    .oneburger{
+        width: 220px;
+        z-index: 10;
+        position: relative;
+        margin-top: 73px;
+        margin-left: 62px;
+    }
+    .glow{
+        display: none;
+    }
+    .sh-burger{
+        display: none;
+    }
+    .sh-drink{
+      display: none;
+    }
+    .red-circle{
+        position: absolute;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        top:190px;
+        background-color: var(--red-circle);
+        z-index: 10;
+        left: 0;
+    }
+    .red-dot-circle{
+        width: 75px;
+        height: 75px;
+    }
+    .five{
+        font-size: 25px !important;
+        margin-bottom: 0 !important;
+    }
+    .four-nine{
+        font-size: 10px !important;
+        margin-bottom: 5px !important;
+    }
+    .only{
+        font-size: 6px;
+    }
+    .p2-burger-three {
+        margin-top: -63px;
+        width: 98% !important;
+        margin-left: 4px;
+    }
+    .fz-10{
+        font-size: 10px;
+    }
+    .fz-15{
+        font-size: 15px;
+    }
+    .mobile-menu{
+        padding-top: 20px;
+        padding-left: 0;
+    }
+    .side-nav{
+        background-color: #ffffff;
+        backdrop-filter: blur(5px);
+    }
+    .side-nav-mobile{
+        padding: 0 10px;
+        margin-bottom: 10px;
+        border-radius: 1.75rem;
+        text-align: center;
+        background-color: var(--bg);
+        box-shadow: 0 0 5px #00000020;
+    }
+    .first-page{
+        background-color: #ffffff;
+        box-shadow: 0 0 5px #00000020;
+    }
+    .nav-mobile{
+        width: 100%;
+    }
+}
